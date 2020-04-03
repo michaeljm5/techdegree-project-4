@@ -1,0 +1,43 @@
+/* ============================================= */
+/*              Buttons                          */
+/* ============================================= */
+
+.btn {
+    margin-top: 15px;
+    width: 100%;
+    color: #fff;
+    border: none;
+    padding: 10px 0;
+    text-transform: uppercase;
+    border-radius: 5px;
+    @include mq('1') {
+        padding: 10px 30px;
+    }
+  }
+  
+  .default {
+    background-color: $color-link;
+  }
+  
+  .error {
+    background-color: $color-error;
+  }
+  
+  .info {
+    background-color: $color-info;
+  }
+  
+  .success {
+    background-color: #63cc82;
+  }
+  
+  .warning {
+    background-color: #fd7856;
+  }
+  
+  .btn + .btn {
+    @include mq('1') {
+        margin-left: 10px;
+    }
+  }
+  
